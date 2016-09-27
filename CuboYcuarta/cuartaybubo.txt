@@ -1,0 +1,36 @@
+//Estructuras Repetitivas #10 Cubo y Cuarta de un numero
+
+//Planteamiento del problema: 
+
+//Leer 10 números y obtener su cubo y su cuarta
+
+
+//Declaracion de variables
+var n = 10;
+
+var cubo = n*n*n;
+
+var cuarta = cubo*n;
+
+
+
+//Proceso
+
+for (var i=1; i<=10; i++) {
+	
+var n = parseInt(prompt("Ingresa numero"))
+	
+	
+
+cubo = n*n*n;
+	
+cuarta = cubo*n;
+
+
+//Salida
+	
+console.log('El cubo de ' + n + ' es ' + ' = ' + cubo);
+	
+console.log('La cuarta de ' + n + ' es ' + ' = '  + cuarta);
+
+}

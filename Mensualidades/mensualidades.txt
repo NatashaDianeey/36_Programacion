@@ -1,0 +1,22 @@
+//Estructuras varios #9 Mensualidades 
+//Planteamiento del problema: 
+//Una persona adquirió un producto para pagar en 20 meses. 
+El primer mes pagó $10, el segundo $20, el tercero $40
+ y así sucesivamente. Realice un algoritmo para determinar 
+cuánto debe pagar mensualmente y el total de lo que pagó 
+después de los 20 meses y represéntelo mediante el diagrama 
+de flujo y el pseudocódigo utilizando el ciclo apropiado
+
+//Declaracion de variables
+var mes = 5;
+var total = 0;
+
+//Proceso
+for (var i=1; i<20; i++) {
+	mes = mes*2;
+	console.log('Mes ' + i + ' = ' + mes);
+	total = total + mes;
+	
+}
+//Salida
+console.log('El total de 20 meses es = ' + total)

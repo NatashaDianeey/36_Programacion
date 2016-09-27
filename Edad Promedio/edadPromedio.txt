@@ -1,0 +1,42 @@
+//Estructuras Repetitivas #4 Edad Promedio
+
+//Planteamiento del problema: 
+
+//Se requiere un algoritmo para obtener la edad promedio de un grupo de 'N' alumnos.
+
+
+
+
+//Entrada del Usuario
+
+
+var n = parseInt(prompt("Ingresa el numero de alumnos"))
+
+
+
+//Declaracion de Variables
+
+var edad = 0
+
+var edadTotal = 0
+
+var edadPromedio = 0
+
+
+
+//Proceso
+
+for (var i=1; i<=n; i++) {
+	
+var edad = parseInt(prompt("Ingresa la edad de cada alumno"))
+	
+	
+
+edadTotal = edadTotal + edad;
+
+}
+
+
+//Salida
+
+edadPromedio = edadTotal / n

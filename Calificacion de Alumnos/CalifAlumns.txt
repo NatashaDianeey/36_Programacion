@@ -1,0 +1,45 @@
+//Estructuras varios #9 Calificaciones de Alumnos
+
+//Planteamiento del problema: 
+
+//Suponga que se tiene las calificaciones de un grupo de 40 alumnos.
+Realizar un algoritmo para calcular la calificación media y 
+la calificación más baja de tod el grupo 
+
+
+
+//Declaracion de variables
+
+var cb = 5;
+
+var cm = 0;
+
+var suma = 0;
+
+var nt = 0;
+
+
+//Proceso
+
+for (var i=1; i<40; i++) {
+	
+var nt = parseInt(prompt("Ingresa nota de alumno"))
+	
+	
+
+suma = suma + nt;
+	
+if ( ( nt > 0 ) && ( nt <=5) ) {
+		
+	nt = cb;
+	
+	}
+	
+
+}
+
+
+cm = suma/40;
+
+//Salida
+console.log('Calificacion media es =' + cm + '\n Calificacion mas baja es = ' + cb)

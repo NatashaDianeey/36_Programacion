@@ -1,0 +1,38 @@
+//Estructuras varios #4 Aguascalientes-Zacatecas
+
+
+//Planteamiento del problema: 
+
+//Una persona se encuentra en el kilómetro 0 de la carretera Aguascaliente-Zacatecas 
+otra se encuentra en el m 150 de la misma carretera.La primera viaja en dirección a acatecas,
+mientra que la segunda se dirig  a  guascalientes, a la misma velocidad. 
+
+
+
+//Declaracion de variables
+
+var a = 70;
+
+var b = 150;
+
+var km = 0;
+
+
+
+//Proceso
+
+while (a!=b) {
+	
+
+a++ ;
+	
+b-- ;
+	
+km++ ;
+	
+
+}
+
+//Salida
+
+console.log('Se encontraron en el kilometro ' + a + ' y recorrieron ' + km +  ' kilometros')

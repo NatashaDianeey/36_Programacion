@@ -1,0 +1,38 @@
+//Estructuras varios #5 Ahorro
+
+//Planteamiento del problema: 
+
+//Se requiere un algoritmo para determinar cuánto ahorrará una persona en un ano, 
+si al final de cada mes deposita variables cantidades de dinero además, 
+se requiere  saber cuánto lleva ahorrado cada mes. 
+
+
+
+
+//Declaracion de variables
+var ahorroMensual = 0;
+
+var ahorroAnual = 0;
+
+
+
+
+//Proceso
+
+for (i=1; i<=12; i++) {
+	
+var cantidad = parseInt(prompt("Ingrese cantidad"))
+	
+	
+
+ahorroAnual = ahorroMensual + cantidad;
+	
+	
+console.log('Llevas ahorrado en mes ' + i + ' = ' + ahorroAnual);
+
+ahorroMensual = ahorroAnual;
+
+
+}
+
+console.log(ahorroAnual)
