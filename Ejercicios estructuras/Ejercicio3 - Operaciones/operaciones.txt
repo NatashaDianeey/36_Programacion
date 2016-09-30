@@ -1,0 +1,49 @@
+//Ejercicios Estructuras #3 Operaciones
+
+
+//Pedir dos numeros y despues realizar las siguientes operaciones:
+
+//-Si el primer numero es mayor que el segundo, sumarlos y restarlos 
+
+//-Sino, si los dos numeros son iguales,mandar una alerta indicando eso, 
+
+//-sino multiplicarlos y dividirlos
+
+
+
+
+
+//Proceso
+
+
+
+var numeroUno = parseInt(prompt('Ingresa un primer numero'))
+
+var numeroDos = parseInt(prompt('Ingresa un segundo numero'))
+
+
+
+if (numeroUno>numeroDos) 
+{
+	
+	sumar = numeroUno + numeroDos;
+	
+	restar = numeroUno - numeroDos;
+		
+	console.log(sumar);
+	
+	console.log(restar);
+	
+
+} else if (numeroUno == numeroDos) {
+	
+	alert('Los numeros son iguales')
+	
+
+} else {
+	
+	multiplicar = numeroUno*numeroDos;
+	
+	console.log(multiplicar);
+
+}

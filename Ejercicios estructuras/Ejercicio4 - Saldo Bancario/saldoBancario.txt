@@ -1,0 +1,52 @@
+//Ejercicios Estructurales # 4 Saldo Bancario
+
+// En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada cuenta corriente se conoce: número de cuenta, nombre del cliente y saldo actual. El ingreso de datos debe finalizar al ingresar un valor negativo en el número de cuenta.
+
+// Se pide confeccionar un programa que lea los datos de las cuentas corrientes e informe:
+
+// a) De cada cuenta: número de cuenta, nombre del cliente y estado de la cuenta según su saldo, sabiendo que:
+
+// Estado de la cuenta:
+
+// 'Acreedor' si el saldo es >0. 'Deudor' si el saldo es <0. 'Nulo' si el saldo es =0.
+
+// b) La suma total de los saldos acreedores.
+
+
+
+//Proceso
+
+
+
+var acreedoresTotales = 0;
+
+
+do {
+	alert('Al ingresar numero negativo, finaliza el programa')
+	
+	var numerodeCuenta = parseInt(prompt('Ingresa numero de cuenta de 5 digitos'))
+	
+	var nombredeCliente = prompt('Ingresa nombre de cliente')
+	
+	var saldodeCuenta = parseInt(prompt('Ingresa saldo de cuenta'))
+	
+	
+
+	if (saldodeCuenta>0) {
+	
+		console.log('\nNumero de cuenta: ' + numerodeCuenta + '\nNombre del Cliente: ' + nombredeCliente + '\nSaldodeCuenta:  Acreedor' + '$' + saldodeCuenta);
+	acreedoresTotales = acreedoresTotales  + saldodeCuenta;
+	} 
+	
+else if (saldodeCuenta<0) {
+	console.log('\nNumero de cuenta: ' + numerodeCuenta + '\nNombre del Cliente: ' + nombredeCliente + '\nSaldodeCuenta:  Deudor ' + '$' + saldodeCuenta);
+	} 
+	
+	else {
+		
+		console.log('\nNumero de cuenta: ' + numerodeCuenta + '\nNombre del Cliente: ' + nombredeCliente + '\nSaldodeCuenta: Nulo ' + '$' + saldodeCuenta);
+	
+	}
+
+	} while(numerodeCuenta>0);
+	console.log('\nLa suma total de los saldos acreedores es: '+ acreedoresTotales)

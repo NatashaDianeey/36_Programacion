@@ -1,0 +1,75 @@
+
+/*
+Un empleado de la tienda “Tiki Taka” realiza N ventas durante el día;se requiere saber cuántas de ellas: • Fueron mayores a $1000, • Cuántas fueron mayores a $500 pero menores o iguales a $1000 • Cuántas fueron menores o iguales a $500. • Además, se requiere saber el monto de lo vendido en cada categoría y de forma global.
+Realice un algoritmo que permita determinar lo anterior y represéntelo mediante el diagrama de flujo y el pseudocódigo utilizando el ciclo apropiado
+*/
+
+//Definir la cantidad de ventas
+//Saber si es mayor a $1000
+//Saber si es mayor a 500 o Igual a $1000
+//Saber si fue menor o igual 500
+//Saber el monto global y por categoria
+
+function imprimirVenta(tipoDeVenta,totalDeVentas,montoDeVentas) //Esta funcion imprime las ventas en el formato ya establecido
+{
+	console.log("Total de ventas "+tipoDeVenta+" : "+totalDeVentas+" ;\nUn total de $"+montoDeVentas);
+}
+
+function get_cantidad_de_ventas()	//Obtiene las ventas totales
+{
+	total_ventas = prompt("Cuantas ventas se realizaron?");
+	total_ventas = Number(total_ventas);
+	return total_ventas;
+}
+
+function venta_es_mayor_a_mil(venta) //Nos dice si la venta es mayor a mil
+{
+	if (venta>1000)
+		return true;
+	else
+		return false;
+}
+function venta_mayor_quinientos_o_igual_a_mil(venta) //Regresa un Booleano, si es mayor a 500 y menor igual a 1000
+{
+	return venta>500 && venta <=1000
+}
+
+// Aqui empieza el codigo, arriba son solo funciones
+
+var cantidad_de_ventas = get_cantidad_de_ventas();
+//Variables para ventas >1000
+var venta_mayor=0;
+var montos_venta_mayor=0;
+//Variables 1000=>ventas>500
+var venta_media=0;
+var montos_venta_media=0;
+//ventas <500
+var venta_chica=0;
+var montos_venta_chica=0;
+
+for(var i = 0; i<cantidad_de_ventas ; ++i)
+{
+	var venta_actual = prompt("Ingresa la venta "+(i+1) );
+	venta_actual = Number(venta_actual);
+	
+	if ( venta_es_mayor_a_mil(venta_actual) )
+	{
+		venta_mayor++;
+		montos_venta_mayor=montos_venta_mayor+venta_actual;
+	}
+	else if( venta_mayor_quinientos_o_igual_a_mil(venta_actual) )
+	{
+		venta_media++;
+		montos_venta_media=montos_venta_media+venta_actual;
+	}
+	else 
+	{
+		venta_chica++;
+		montos_venta_chica= montos_venta_chica+venta_actual;
+	}
+}
+
+imprimirVenta("Mayores a 1000",venta_mayor,montos_venta_mayor);
+imprimirVenta("Mayor a 500 o igual a 1000",venta_media,montos_venta_media);
+imprimirVenta("Menores a 500",venta_chica,montos_venta_chica);
+

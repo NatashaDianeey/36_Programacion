@@ -1,0 +1,17 @@
+//Ejercicios Estructurales #6 Multiplos de 11
+
+//Realizar un programa que calcula todos los múltiplos de 11 menores de 3000 y por último nos da la suma de todos ellos.
+
+
+
+//Proceso
+
+
+
+for(var i=0; i<3000; i+11) {
+	
+	i = i +11;
+	
+	console.log('Multiplo del 11 ' + '= ' + i)
+
+}

@@ -1,0 +1,30 @@
+//Ejercicios Estructurales #7 Listas de valores
+// Realizar un programa que permita cargar dos listas de 3 valores cada una. 
+//Informar con un mensaje cual de las dos listas tiene un valor acumulado mayor 
+//(mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales')
+
+// Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
+
+//Proceso
+
+var sumar = 0;
+
+for (i=0; i<3; i++) {
+	var valoresListaUno = parseInt(prompt('Ingresa valores'))
+	console.log('Lista 1: ' + valoresListaUno);
+	sumar = sumar + valoresListaUno;
+}
+
+for (i=0; i<3; i++) {
+var valoresListaDos = parseInt(prompt('Ingresa valores'))
+	console.log('Lista 2: ' + valoresListaDos);
+	sumar = sumar + valoresListaDos;
+}
+
+if (valoresListaUno>valoresListaDos) {
+	alert('Lista 1 mayor')
+} else if ( valoresListaUno<valoresListaDos){
+	alert('Lista 2 mayor')
+} else {
+	alert('Listas iguales')
+}

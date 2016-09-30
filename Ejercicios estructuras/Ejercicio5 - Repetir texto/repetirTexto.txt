@@ -1,0 +1,15 @@
+//Ejercicios Estructurales #5 Repetir un Texto
+
+//Realizar un programa que repite un texto cualquiera en número de veces que queramos, utilizando un “for”
+
+//PROCESO
+
+var numeroRepeticiones = parseInt(prompt('Ingresa numero de veces que se repetira el texto'))
+
+
+
+for(i=0; i<numeroRepeticiones; i++){
+	
+	console.log(' \n"Una mujer empoderada es aquella que accede \n a su poder basándose en su verdadera esencia" ')
+
+}

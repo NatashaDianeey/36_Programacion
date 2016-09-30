@@ -1,0 +1,38 @@
+//Estructuras varios #7 Horas de Trabajo
+//Planteamiento del problema: 
+
+//Una empresa tiene el registro de las horas 
+que trabaja diariamente un empleado  durante 
+la semana seis das y requiere determinar el   
+total de estas, asi como el sueldo que recibirá
+por las horas trabajadas.  
+
+
+//Declaracion de variables
+var horasAlaSemana =0;
+
+var horasDia =parseInt(prompt('Ingresa el numero de Horas que trabajan al dia'))
+
+
+
+//Proceso
+for (i=1; i<=6; i++) {
+	
+horasAlaSemana = horasAlaSemana+horasDia;
+	
+}
+	
+
+
+var pagoHora =parseInt(prompt('Ingresa el pago por hora'))
+
+
+
+sueldoSemanal = horasAlaSemana*pagoHora;
+
+
+
+//Salida
+console.log(horasAlaSemana);
+
+console.log(sueldoSemanal);
