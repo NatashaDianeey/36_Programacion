@@ -1,0 +1,37 @@
+// Ejercicio #1: El menor de los numeros
+
+
+// Elaborar una función a la cual le enviemos tres enteros y muestre el menor.
+
+
+
+var num1 = parseInt(prompt('Ingresa numero'));
+
+var num2 = parseInt(prompt('Ingresa numero'));
+
+var num3 = parseInt(prompt('Ingresa numero'));
+
+
+
+function mostrarMenor (num1, num2, num3) {
+
+	
+	if (num1<num2 && num1<num3){
+		
+		console.log('El numero menor es: ' + num1)
+
+	
+	} else if ( num2<num3 && num2<num1) {
+		
+		console.log('El numero menor es: ' + num2)
+	
+
+	} else {
+		
+		console.log('El numero menor es: ' + num3)
+	
+	}
+
+
+}
+mostrarMenor (num1, num2, num3);

@@ -1,0 +1,11 @@
+//Ejercicio #5: Suma de números
+
+//Hacer un ejercicio que nos pida 10 números y luego que sume esos valores.
+
+var sumar = 0;
+for (i=0; i<10; i++){
+	var numeros = parseInt(prompt('Ingresa numero'));
+	console.log(numeros);
+	sumar = sumar + numeros;
+} 
+console.log('La suma de los 10 número es = ' + sumar)

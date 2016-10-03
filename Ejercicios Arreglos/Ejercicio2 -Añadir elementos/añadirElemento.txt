@@ -1,0 +1,14 @@
+//Ejercicio #2: Añadir elementos a un array con push(Ciclo for)
+/*
+Crear un array de elementos que contenga nombres y posteriormente agregar más elementos por medio del método “push”*/
+
+//Proceso
+
+var numNombres = 1;
+var ingresarElementos = prompt('Ingresa un nombre');
+
+for (i=0; i<numNombres; i++) {
+	var array = ["Natasha", "Mariana"];
+	array.push(ingresarElementos);
+}
+console.log(array);

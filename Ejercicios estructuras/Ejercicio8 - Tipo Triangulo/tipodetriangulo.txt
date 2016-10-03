@@ -1,0 +1,23 @@
+alert('Escribe 1 si tu respuesta es SI, si es NO escribe 2')
+
+var anguloTriangulo = parseInt(prompt('Su angulo es de 90°'))
+
+if ( anguloTriangulo === 2){
+	
+		var longdeLadoA = parseInt(prompt('Ingresa la longitud del lado A'));
+		var longdeLadoB = parseInt(prompt('Ingresa la longitud del lado B'));
+		var longdeLadoC = parseInt(prompt('Ingresa la longitud del lado C'));
+		
+		
+	if ( longdeLadoA === longdeLadoB && longdeLadoB === longdeLadoC ){
+		alert('Es un Triangulo Equilatero')
+		
+	} else if (longdeLadoA === longdeLadoB && longdeLadoB !== longdeLadoC || longdeLadoB === longdeLadoC && longdeLadoC !== longdeLadoA || longdeLadoA === longdeLadoC && longdeLadoC !== longdeLadoB ) {
+		alert('Es un Triangulo Isóceles')
+		
+	} else if (longdeLadoA !== longdeLadoB && longdeLadoB !== longdeLadoC ) {
+		alert ('Es un Triangulo Escaleno')
+	}
+	
+} else 
+	alert('Es un Triangulo Rectangulo')

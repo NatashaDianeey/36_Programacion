@@ -1,0 +1,29 @@
+// Ejercicio #2: Numero par o impar
+
+
+// Escribir el código de una función a la que se pasa como parámetro un número entero y 
+devuelve como resultado una cadena de texto que indica si el número es par o impar.
+
+
+// Mostrar por pantalla el resultado devuelto por la función.
+
+
+
+var numUsuario = parseInt(prompt('Ingresa numero'));
+
+
+
+function numero (numUsuario) {
+	
+	if ( numUsuario % 2 === 0){
+		
+		console.log('Es numero par')
+	
+	} else {
+		
+		console.log ('No es numero par')
+	
+	}
+
+}
+numero(numUsuario)

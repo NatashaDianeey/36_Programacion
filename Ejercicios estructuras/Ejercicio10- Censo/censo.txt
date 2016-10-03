@@ -1,0 +1,126 @@
+//Ejercicios Estructura # 10 Censo
+/*
+Se realizó un censo provincial y se desea procesar la información obtenida en dicho censo. 
+De cada una de las personas censadas se tiene la siguiente información: 
+número de documento, edad y sexo ('femenino' o 'masculino') 
+Se pide confeccionar un programa que lea los datos de cada persona censada 
+(para finalizar ingresar el valor cero en el número de documento) e informar:
+
+a) Cantidad total de personas censadas. 
+b) Cantidad de varones. 
+c) Cantidad de mujeres. 
+d) Cantidad de varones cuya edad varía entre 16 y 65 años.*/
+
+//Proceso
+
+var femenino = 1;
+
+var masculino = 1;
+
+var sumarMas = 0;
+
+var sumarFem = 0;
+
+var cantidadVarones = 0;
+
+var cantidadMujeres = 0 ;
+
+var edadVarones = 0 ;
+
+
+
+
+alert('Para finalizar, ingresar el valor 0 en el numero de documento' );
+
+var cantidadTotal = parseInt(prompt('Ingresar el total de las personas censadas'));
+		
+
+
+for (i=0; i<cantidadTotal; i++) {
+	
+	
+var numeroDocumento = parseInt(prompt('Ingresar numero de documento'));
+
+	
+	if (numeroDocumento>0) {
+		
+		console.log('\nNumero de Documento: ' + numeroDocumento);
+		
+		
+		
+		var sexo = prompt('Sexo');
+		
+		switch (sexo) {
+			
+			case('femenino'):
+				
+				console.log('Sexo: Femenino');
+				
+				sumarFem = sumarFem + femenino;
+	
+			
+				var edad = parseInt(prompt('Ingrese la edad'));
+				
+				console.log('Edad: ' + edad);
+				
+				
+				break;
+			
+			case ('masculino'):
+				
+				console.log('Sexo: Masculino');
+				
+				sumarMas = sumarMas + masculino;
+				
+				
+				var edad = parseInt(prompt('Ingrese la edad'));
+				
+				console.log('Edad: ' + edad);
+				
+
+				if ( edad=> 16 && edad<=65 ) {
+					
+					edadVarones = edadVarones + 1;
+				
+				}
+				
+				break;
+			
+			
+			default :
+								
+				alert('\nNo coincide con las anteriores');
+				
+				break;
+	
+		}
+	
+	}
+
+}
+
+console.log('\nCantidad de Personas Censadas: ' + cantidadTotal)
+
+
+
+var cantidadMujeres = cantidadMujeres + sumarFem;
+
+console.log('\nCantidad de Mujeres: ' + cantidadMujeres);
+
+
+
+var cantidadVarones = cantidadVarones + sumarMas;
+
+console.log('\nCantidad de Varones: ' + cantidadVarones);
+
+
+
+console.log('\nCantidad de varones cuya edad varía entre 16 y 65 años: ' + edadVarones)
+
+
+
+
+
+
+
+
